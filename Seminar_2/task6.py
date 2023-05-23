@@ -3,7 +3,7 @@
 # В последующих  строках записаны N целых чисел Ai. Последняя строка содержит число X
 
 
-import random, math
+import random
 
 print("Задача 6 Вычисляет ближайшее к X по значентю число X в массиве из N натуральных чисел ")
 
@@ -24,11 +24,11 @@ for i in range(n):
 print(f"сгенерирован массив {list_1}")
 
 x = checkInputInt("Введите число для сравнения \n")
-closer = math.fabs(list_1[0] - x)
+closer = abs(list_1[0] - x)
 
 
 for i in range(1,n):
-    if math.fabs(list_1[i] - x) < closer:
+    if abs(list_1[i] - x) < closer:
         closer = list_1[i]
         
 

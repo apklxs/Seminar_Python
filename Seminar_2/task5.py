@@ -23,11 +23,7 @@ print(f"сгенерирован массив {list_1}")
 x = checkInputInt("Введите число для поиска \n")
 count = 0
 
-for i in range(n):
-    if x == list_1[i]:
-        count = count + 1
-
-print(f"число {x} содержится в массиве {count} раз")
+print(f"число {x} содержится в массиве {list_1.count(x)} раз")
 
 
 
